@@ -1,0 +1,24 @@
+@import '../../style.scss';
+
+.card-container {
+
+	
+	.player-card {
+		@include flex-container(column, center, center);
+		
+		.position-img {
+			// placing position-img behind player-img
+			z-index: -1;
+			margin-top: -10px;
+
+			background: white;
+		}
+
+		.add-item-img {
+			position: absolute;
+			top: 50%;
+			width: 50px;
+		}
+	}
+
+}
